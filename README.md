@@ -8,24 +8,24 @@
 Реализация включает в себя:
 
    - CRUD операции для сущностей Writer, Post, Label
-  - Валидацию входных данных
-  - Хранение данных в JSON-файлах
-  - Управление статусами записей (ACTIVE/DELETED)
+   - Валидацию входных данных
+   - Хранение данных в JSON-файлах
+   - Управление статусами записей (ACTIVE/DELETED)
 
 ## Структура проекта
 
 Сущности:
 
-   - Writer (id, firstName, lastName, List<Post> posts)
+  - Writer (id, firstName, lastName, List<Post> posts)
   - Post (id, title, content, List<Label> labels)
   - Label(id, name)
   - Status (enum ACTIVE, DELETED)
 
 Слои:
-   - org.app.model - POJO клаcсы
-   - org.app.repository - классы, реализующие доступ к текстовым файлам
-   - org.app.controller - обработка запросов от пользователя
-   - org.app.view - все данные, необходимые для работы с консолью
+   - model - POJO клаcсы
+   - repository - классы, реализующие доступ к текстовым файлам
+   - controller - обработка запросов от пользователя
+   - view - все данные, необходимые для работы с консолью
 
 ## Описание работы
 
